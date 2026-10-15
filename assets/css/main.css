@@ -1273,3 +1273,167 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+
+/* ==================== SKILLS SECTION (LIGHT & CLEAN THEME) ==================== */
+.skills-section {
+  padding: 80px 0;
+  background: #f8fafc; /* Latar belakang abu-abu sangat terang */
+  color: #1e293b;
+  position: relative;
+}
+
+.skills-section .section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.skills-section .section-title h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0f172a; /* Teks judul gelap pekat */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Garis aksen bawah judul */
+.skills-section .section-title h2::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #0284c7;
+  border-radius: 2px;
+}
+
+.skills-section .section-title p {
+  color: #64748b; /* Teks deskripsi abu-abu lembut */
+  font-size: 1.05rem;
+  max-width: 650px;
+  margin: 15px auto 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* Kartu Putih Bersih */
+.skill-category-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 32px 28px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+.skill-category-card:hover {
+  transform: translateY(-6px);
+  border-color: #cbd5e1;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+/* Ikon Terang */
+.category-icon {
+  width: 50px;
+  height: 50px;
+  background: #f0f9ff;
+  color: #0284c7;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border: 1px solid #e0f2fe;
+}
+
+.category-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0;
+}
+
+.category-desc {
+  font-size: 0.92rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* Progress Bar Terang */
+.skill-items {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 6px;
+}
+
+.progress-line {
+  height: 8px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #e2e8f0;
+}
+
+.progress-line span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #0ea5e9, #0284c7);
+  border-radius: 10px;
+}
+
+/* Tag / Badge Terang */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.tech-tags .tag {
+  background: #f8fafc;
+  color: #0369a1;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.tech-tags .tag:hover {
+  background: #e0f2fe;
+  border-color: #bae6fd;
+}
